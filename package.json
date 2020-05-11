@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "nbfe blog",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "echo xxxx - postinstall",
+    "postmerge": "echo xxxx - postmerge",
+    "postpull": "echo xxxx - post pull",
+    "postrebase": "echo xxxx - postrebase",
+    "bootstrap": "nbnpm i",
+    "dev": "cross-env NODE_ENV_DEV=dev node build/index.js",
+    "vuepress-dev": "vuepress dev",
+    "build": "node build/index.js && vuepress build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dist": "dist",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.1.6",
+    "fs-extra": "^6.0.1",
+    "vuepress": "^0.8.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chokidar": "^2.0.3",
+    "config": "^1.30.0",
+    "lodash": "^4.17.10",
+    "vuepress": "^0.8.4"
+  }
+}
